@@ -1,11 +1,11 @@
 * {
-    font-family: 'Fjalla One', sans-serif;
-    letter-spacing: 3px;
-    box-sizing: border-box;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 3px;
+  box-sizing: border-box;
 }
-body { 
-    background-image:url("https://images.pexels.com/photos/601798/pexels-photo-601798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") ;
-    background-size: cover;
+body {
+  background-image: url("https://images.pexels.com/photos/601798/pexels-photo-601798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
   font-family: "Fira Sans", sans-serif;
   line-height: 1.6;
   min-height: 100vh;
@@ -13,97 +13,102 @@ body {
   place-items: center;
 }
 .card {
-    
-    box-shadow: 0 0 20px rgba(0,0,0, 0.2);
-    width: 80%;
-    max-width: 600px;
-    position: relative;
-    top: 10px;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    background: #005e9b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  top: 10px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  background: #005e9b;
 
-    color: white;
-    text-align: center;
-    padding: 15px;
-
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 .profile-img {
-    border-radius: 50%;
-    border: 5px solid white;
-    position: relative;
-    z-index: 10;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  z-index: 10;
 }
 
 .profile-name {
-    font-size: 2rem;
-    line-height: 1;
+  font-size: 2rem;
+  line-height: 1;
 }
 .profile-name::after {
-    content: "";
-    display: block;
-    margin-left: 50px;
-    height: 1px;
-    width: 2em;
-    background : #5bcbf0;
-    margin: 0.7em auto 0.5em;
-    opacity: 0.35;
+  content: "";
+  display: block;
+  margin-left: 50px;
+  height: 1px;
+  width: 2em;
+  background: #5bcbf0;
+  margin: 0.7em auto 0.5em;
+  opacity: 0.35;
 }
 .profile-position {
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #5bcbf0;
-    margin-bottom: 2em;
-
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #5bcbf0;
+  margin-bottom: 2em;
 }
 .profile-body {
-    font-weight: 300;
-    opacity: .7;
+  font-weight: 300;
+  opacity: 0.7;
 }
 
 .social-media {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 125px;
-    margin: 0 auto;
-
-
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  margin: 0 auto;
+}
+#pro {
+    font-weight: 500;
 }
 .icon {
-    color: #000000;
-    opacity: .7;
-    font-size: 25px;
+  color: #000000;
+  opacity: 0.7;
+  font-size: 25px;
 }
 .icon:hover,
 .icon:focus {
-    opacity: 1;
+  opacity: 1;
 }
 .footer {
-    color: #000000;
-    opacity: 1;
-    font-size: 25px;
-    font-size: 1em;
+  color: #000000;
+  opacity: 1;
+  font-size: 25px;
+  font-size: 1em;
 }
 div:visited {
-    color: pink;
-  }
-
+  color: pink;
+}
+a:active {
+    text-decoration: none;
+    color : white;
+}
+a:link {
+    text-decoration: none;
+}
+a {
+    color: wheat;
+}
 @media (min-width: 610px) {
-    .card {
-        flex-direction: row;
-    }
-    .profile-name {
-        text-align: left;
-        margin-left: 2em;
-
-    }
-    .profile-name::after {
-        margin-left: 0;
-
-    }
+  .card {
+    flex-direction: row;
+  }
+  .profile-name {
+    text-align: left;
+    margin-left: 2em;
+  }
+  .profile-name::after {
+    margin-left: 0;
+  }
 }
